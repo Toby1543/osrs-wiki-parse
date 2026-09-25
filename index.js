@@ -220,11 +220,6 @@ async function parseRequirements() {
 			if (!skill || Number.isNaN(level)) {
 				return;
 			}
-			
-			// These are requirements, but are not skills.
-			if (skill === 'Combat level' || skill === 'Quest points') {
-				return;
-			}
 
 			if (!skills.has(skill)) {
 				skills.set(skill, []);
